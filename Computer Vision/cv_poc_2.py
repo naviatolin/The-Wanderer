@@ -1,3 +1,4 @@
+# import the necessary packages
 import numpy as np
 import cv2
  
@@ -41,6 +42,7 @@ cap.release()
 out.release()
 # finally, close the window
 cv2.destroyAllWindows()
-cv2.waitKey(1)
+cv2.waitKey()
+
 
 # https://thedatafrog.com/human-detection-video/
