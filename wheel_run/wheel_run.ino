@@ -11,6 +11,7 @@ Adafruit_DCMotor *rightMotor = AFMS.getMotor(3);
 //variables for motor speed and sensors
 int generalSpeed = 30; //starting speed for motors
 //for inputing speeds later
+#define prox_sensor A0;
 String incomingVal = "";
 int s = 0;
 
@@ -37,5 +38,19 @@ void loop() {
   leftMotor->run(FORWARD);
   leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
   rightMotor ->setSpeed(generalSpeed);
+
+  distance = analogRead(prox_sensor)
+  if (distance > 350) {
+    leftMotor ->setSpeed(0); //left motor is slightly slower than right
+    rightMotor ->setSpeed(0);
+    rightMotor->run(BACKWARD); //direction of motors
+    leftMotor->run(BACKWARD);
+    leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
+    rightMotor ->setSpeed(generalSpeed);
+    rightMotor->run(FORWARD); //direction of motors
+    leftMotor->run(BACKWARD);
+    leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
+    rightMotor ->setSpeed(generalSpeed);
+  }
 
 }
