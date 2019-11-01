@@ -1,2 +1,4 @@
+.weights
 .DS_Store
 output.avi
+Computer Vision/yolo-coco/yolov3.weights

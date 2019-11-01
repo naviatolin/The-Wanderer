@@ -10,8 +10,9 @@ Adafruit_DCMotor *rightMotor = AFMS.getMotor(3);
 
 //variables for motor speed and sensors
 int generalSpeed = 30; //starting speed for motors
+int distance = 5000; //large distance so it doesn't set off stop
 //for inputing speeds later
-#define prox_sensor A0;
+#define prox_sensor A0
 String incomingVal = "";
 int s = 0;
 
@@ -39,8 +40,11 @@ void loop() {
   leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
   rightMotor ->setSpeed(generalSpeed);
 
-  distance = analogRead(prox_sensor)
+  distance = analogRead(prox_sensor);
+  Serial.print("Distance: ");
+  Serial.println(distance);
   if (distance > 350) {
+    Serial.println("Turning, distance > 350");
     leftMotor ->setSpeed(0); //left motor is slightly slower than right
     rightMotor ->setSpeed(0);
     rightMotor->run(BACKWARD); //direction of motors
