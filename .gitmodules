@@ -1,0 +1,6 @@
+[submodule "The_Wanderer_Website/hugo-theme-hello-friend-ng"]
+	path = The_Wanderer_Website/hugo-theme-hello-friend-ng
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
+[submodule "The_Wanderer_Website/themes/hello-friend"]
+	path = The_Wanderer_Website/themes/hello-friend
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
