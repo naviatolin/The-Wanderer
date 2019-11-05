@@ -23,16 +23,10 @@ class ProcessingEngine:
         cwd = os.getcwd()
         DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
         print(cwd)
-        if __name__ == '__main__':
             labelsPath = os.path.sep.join(["yolo-coco","coco.names"])
 
-            self.weightsPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.weights"])
-            self.configPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.cfg"])
-        else:
-            labelsPath = os.path.sep.join(["api","yolo-coco","coco.names"])
-
-            self.weightsPath = os.path.sep.join([cwd, 'api/yolo-coco', "yolov3.weights"])
-            self.configPath = os.path.sep.join([cwd, 'api/yolo-coco', "yolov3.cfg"])
+        self.weightsPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.weights"])
+        self.configPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.cfg"])
 
         self.LABELS = open(labelsPath).read().strip().split("\n")
 
