@@ -8,12 +8,10 @@ Stripped down for Raspi by Michael Remley
 # pip install opencv-python
 # pip install opencv-contrib-python
 import cv2
-import cv2.aruco as aruco
 from math import acos, cos, sin
 import numpy as np
 import os
 
-DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
 
 class ProcessingEngine:
     """
@@ -23,6 +21,7 @@ class ProcessingEngine:
     def __init__(self, threshold=30, debug=False):
         # load the COCO class labels our YOLO model was trained on
         cwd = os.getcwd()
+        DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
         print(cwd)
         if __name__ == '__main__':
             labelsPath = os.path.sep.join(["yolo-coco","coco.names"])
@@ -43,9 +42,6 @@ class ProcessingEngine:
         self.n = 0  # counter for the calibration process
         self.threshold = threshold  # minimum number of frames used to perform calibration
         self.matrix_list = []  # used to store matrices during calibration
-        # initialize parameters for ARUCO detection (used for perspective correction)
-        self.aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
-        self.parameters = aruco.DetectorParameters_create()
 
         self.debug = debug
 
