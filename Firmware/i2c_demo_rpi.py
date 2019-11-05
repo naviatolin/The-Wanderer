@@ -19,7 +19,7 @@ def main():
         gpio.output(17, status)
         status = not status
         bus.write_byte(address, 1 if status else 0)
-        print "Arduino answer to RPI:", bus.read_byte(address)
+        print("Arduino answer to RPI:", bus.read_byte(address))
         time.sleep(1)
 
 if __name__ == '__main__':
@@ -27,6 +27,6 @@ if __name__ == '__main__':
         main()
 
     except KeyboardInterrupt:
-        print 'Interrupted'
+        print ("Interrupted")
         gpio.cleanup()
         sys.exit(0)
