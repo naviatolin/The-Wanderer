@@ -2,7 +2,7 @@ import RPi.GPIO as gpio
 import smbus
 import time
 import sys
-from ./Computer_Vision/cv_person_detection.py import ProcessingEngine
+from cv_person_detection.py import ProcessingEngine
 
 bus = smbus.SMBus(1)
 address = 0x04
