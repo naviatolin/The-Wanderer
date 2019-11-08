@@ -14,10 +14,8 @@ def main():
     engine = ProcessingEngine(debug=True)
     engine.turn_on()
     while 1:
-        frame = engine.get_frame(0, calibrate=False)
-        cv2.imshow("frame {}".format(0), frame)
+        status = engine.person_detected()
         gpio.output(17, status)
-        status = not status
         bus.write_byte(address, 1 if status else 0)
         print("Arduino answer to RPI:", bus.read_byte(address))
         time.sleep(1)
