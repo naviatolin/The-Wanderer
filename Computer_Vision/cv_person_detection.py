@@ -8,7 +8,6 @@ Stripped down for Raspi by Michael Remley
 # pip install opencv-python
 # pip install opencv-contrib-python
 import cv2
-import cv2.aruco as aruco
 from math import acos, cos, sin
 import numpy as np
 import os
@@ -43,9 +42,6 @@ class ProcessingEngine:
         self.n = 0  # counter for the calibration process
         self.threshold = threshold  # minimum number of frames used to perform calibration
         self.matrix_list = []  # used to store matrices during calibration
-        # initialize parameters for ARUCO detection (used for perspective correction)
-        self.aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
-        self.parameters = aruco.DetectorParameters_create()
 
         self.debug = debug
 
@@ -210,7 +206,7 @@ class ProcessingEngine:
                     boxes[i][3] = y + h
 
                     # draw a bounding box rectangle and label on the image
-                    color = (157, 161, 100)
+                    color = (157, 50, 50)
                     cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
                     text = "{}: {:.4f}".format(self.LABELS[classIDs[i]], confidences[i])
                     cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
