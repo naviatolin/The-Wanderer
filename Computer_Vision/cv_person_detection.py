@@ -12,6 +12,7 @@ from math import acos, cos, sin
 import numpy as np
 import os
 
+DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
 
 class ProcessingEngine:
     """
@@ -21,7 +22,6 @@ class ProcessingEngine:
     def __init__(self, threshold=30, debug=False):
         # load the COCO class labels our YOLO model was trained on
         cwd = os.getcwd()
-        DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
         print(cwd)
         if __name__ == '__main__':
             labelsPath = os.path.sep.join(["yolo-coco","coco.names"])
@@ -206,7 +206,7 @@ class ProcessingEngine:
                     boxes[i][3] = y + h
 
                     # draw a bounding box rectangle and label on the image
-                    color = (157, 161, 100)
+                    color = (157, 50, 50)
                     cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
                     text = "{}: {:.4f}".format(self.LABELS[classIDs[i]], confidences[i])
                     cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
