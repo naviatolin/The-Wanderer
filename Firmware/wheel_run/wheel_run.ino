@@ -27,6 +27,7 @@ void setup() {
 }
 
 void loop() {
+  headServo.write(angle);
   //allows us to change default speed of robot without recompiling code
   if (Serial.available() > 0) { //if there's bytes available
     incomingVal = Serial.readString(); //read the incoming byte
@@ -37,9 +38,9 @@ void loop() {
   }
 
 
-  //Serial.print(String(generalSpeed));
-  //Serial.print(", ");
-  //Serial.println(String(generalSpeed));
+  Serial.print(String(generalSpeed));
+  Serial.print(", ");
+  Serial.println(String(generalSpeed));
 
   //robot's normal forward speed
   rightMotor->run(FORWARD); //direction of motors
@@ -48,20 +49,20 @@ void loop() {
   rightMotor ->setSpeed(generalSpeed);
 
   distance = analogRead(prox_sensor);
-  //Serial.print("Distance: ");
-  //Serial.println(distance);
+  Serial.print("Distance: ");
+  Serial.println(distance);
   if (distance > 350) {
     //Serial.println("Turning, distance > 350");
-    leftMotor ->setSpeed(0); //left motor is slightly slower than right
-    rightMotor ->setSpeed(0);
-    rightMotor->run(BACKWARD); //direction of motors
-    leftMotor->run(BACKWARD);
-    leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
+    leftMotor ->setSpeed(generalSpeed+20); //left motor is slightly slower than right
     rightMotor ->setSpeed(generalSpeed);
-    rightMotor->run(FORWARD); //direction of motors
-    leftMotor->run(BACKWARD);
-    leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
-    rightMotor ->setSpeed(generalSpeed);
+    //rightMotor->run(BACKWARD); //direction of motors
+    //leftMotor->run(BACKWARD);
+    //leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
+    //rightMotor ->setSpeed(generalSpeed);
+    //rightMotor->run(FORWARD); //direction of motors
+    //leftMotor->run(BACKWARD);
+    //leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
+    //rightMotor ->setSpeed(generalSpeed);
   }
 
 }
