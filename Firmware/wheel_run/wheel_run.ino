@@ -19,10 +19,14 @@ int distance = 5000; //large distance so it doesn't set off stop
 #define prox_sensor A0
 String incomingVal = "";
 int s = 0;
+//Raspi communication
+int raspiPin = 11;
 
 void setup() {
   AFMS.begin();
   headServo.attach(9);
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(raspiPin, INPUT);
   Serial.begin(9600);
 }
 
@@ -36,7 +40,14 @@ void loop() {
     headServo.write(angle);
     Serial.println(angle);
   }
-
+  
+  //blinks on board light if raspi sees a person
+  if (Serial.read(raspiPin) == HIGH){
+    digitalWrite(LED_BUILTIN, HIGH); 
+  }
+  else {
+    digitalWrite(LED_BUILTIN, LOW);
+  }
 
   Serial.print(String(generalSpeed));
   Serial.print(", ");
