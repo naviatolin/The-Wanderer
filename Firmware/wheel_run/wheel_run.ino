@@ -13,7 +13,7 @@ Adafruit_DCMotor *rightMotor = AFMS.getMotor(3);
 Servo headServo;
 int angle = 0;
 //variables for motor speed and sensors
-int generalSpeed = 30; //starting speed for motors
+int generalSpeed = 50; //starting speed for motors
 int distance = 5000; //large distance so it doesn't set off stop
 //for inputing speeds later
 #define prox_sensor A0
@@ -45,24 +45,19 @@ void loop() {
   //robot's normal forward speed
   rightMotor->run(FORWARD); //direction of motors
   leftMotor->run(FORWARD);
-  leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
-  rightMotor ->setSpeed(generalSpeed);
+  
 
   distance = analogRead(prox_sensor);
   Serial.print("Distance: ");
   Serial.println(distance);
-  if (distance > 350) {
+  if (distance > 400) {
     //Serial.println("Turning, distance > 350");
     leftMotor ->setSpeed(generalSpeed+20); //left motor is slightly slower than right
+    rightMotor ->setSpeed(0);
+  }
+  else{
+    leftMotor ->setSpeed(generalSpeed+5); //left motor is slightly slower than right
     rightMotor ->setSpeed(generalSpeed);
-    //rightMotor->run(BACKWARD); //direction of motors
-    //leftMotor->run(BACKWARD);
-    //leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
-    //rightMotor ->setSpeed(generalSpeed);
-    //rightMotor->run(FORWARD); //direction of motors
-    //leftMotor->run(BACKWARD);
-    //leftMotor ->setSpeed(generalSpeed); //left motor is slightly slower than right
-    //rightMotor ->setSpeed(generalSpeed);
   }
 
 }
