@@ -21,7 +21,7 @@ class ProcessingEngine:
     def __init__(self, threshold=30, debug=False):
         # load the COCO class labels our YOLO model was trained on
         cwd = os.getcwd()
-        self.DETECTION_THRESHOLD = 0.6  # minimum confidence level for person to be recognized
+        self.DETECTION_THRESHOLD = 0.4  # minimum confidence level for person to be recognized
         print(cwd)
         labelsPath = os.path.sep.join(["yolo-coco","coco.names"])
 
@@ -40,6 +40,8 @@ class ProcessingEngine:
 
         self.cap_dict = {}  # store the OpenCV captures in a dictionary
         self.detect_dict = {}  # store detected outputs in a dictionary
+        
+        self.sees_person = False
 
         # How closely to look at the image, 1:(320,320) looks closer than 2:(128,128)
         self.reading_frames = {1: (320, 320), 2: (128, 128), 3: (96, 96)}
@@ -179,7 +181,7 @@ class ProcessingEngine:
         width = self.cap_dict[4][1]
 
         net = self.detect_dict  # select the image processor (net)
-        blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (160,160),
+        blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (64,64),
                                      swapRB=True, crop=False)  # pre=process the image for detection
 
         # run detection on the frame:
