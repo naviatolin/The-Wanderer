@@ -20,13 +20,13 @@ int distance = 5000; //large distance so it doesn't set off stop
 String incomingVal = "";
 int s = 0;
 //Raspi communication
-int raspiPin = 11;
+int raspiPin = A0; //11
 
 void setup() {
   AFMS.begin();
   headServo.attach(9);
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(raspiPin, INPUT);
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(raspiPin, OUTPUT);
   Serial.begin(9600);
 }
 
@@ -40,18 +40,23 @@ void loop() {
     headServo.write(angle);
     Serial.println(angle);
   }
-  
-  //blinks on board light if raspi sees a person
-  if (Serial.read(raspiPin) == HIGH){
-    digitalWrite(LED_BUILTIN, HIGH); 
-  }
-  else {
-    digitalWrite(LED_BUILTIN, LOW);
-  }
 
-  Serial.print(String(generalSpeed));
-  Serial.print(", ");
-  Serial.println(String(generalSpeed));
+  if (analogRead(raspiPin)>=170){
+    Serial.println("person seen");
+    //rightMotor ->setSpeed(0);
+    //leftMotor ->setSpeed(0);    
+  }
+  //blinks on board light if raspi sees a person
+  //if (digitalRead(raspiPin) == HIGH){
+  //  digitalWrite(LED_BUILTIN, HIGH); 
+  //}
+  //else {
+  //  digitalWrite(LED_BUILTIN, LOW);
+  //}
+
+  //Serial.print(String(generalSpeed));
+  //Serial.print(", ");
+  //Serial.println(String(generalSpeed));
 
   //robot's normal forward speed
   rightMotor->run(FORWARD); //direction of motors
@@ -59,8 +64,8 @@ void loop() {
   
 
   distance = analogRead(prox_sensor);
-  Serial.print("Distance: ");
-  Serial.println(distance);
+  //Serial.print("Distance: ");
+  //Serial.println(distance);
   if (distance > 400) {
     //Serial.println("Turning, distance > 350");
     leftMotor ->setSpeed(generalSpeed+20); //left motor is slightly slower than right
