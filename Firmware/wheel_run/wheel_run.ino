@@ -7,7 +7,8 @@
 Servo leftLeg;
 Servo rightLeg;
 //variables for motor speed and sensors
-int generalSpeed = 180; //starting speed for motors
+int leftSpeed = 60; //starting speed for motors, is forward <90, 0 is full speed
+int rightSpeed = 180-leftSpeed;
 
 //prox sensor
 #define prox_sensor A0
@@ -17,8 +18,8 @@ int distance = 5000; //large distance so it doesn't set off stop yet
 //int s = 0;
 
 //Raspi communication
-int cameraPin = A0; //11
-int stopPin = A1;
+int cameraPin = A1; //11
+int stopPin = A2;
 
 void setup() {
   leftLeg.attach(9);
@@ -39,30 +40,35 @@ void loop() {
   //}
 
   //robot's normal forward speed
+  delay(1000);
+  //Serial.print("Seen: ");
+  //Serial.print(analogRead(cameraPin)>=170);
+  //Serial.print(", Held: ");
+  //Serial.println(analogRead(stopPin));
   
-
   if (analogRead(cameraPin)>=170){
-    //Serial.println("person seen");
-    leftLeg.write(0);
-    rightLeg.write(0);   
+    Serial.println("Person seen, stopping");
+    leftLeg.write(90); //90 is stop
+    rightLeg.write(90);   
   }
   distance = analogRead(prox_sensor);
-  //Serial.print("Distance: ");
-  //Serial.println(distance);
+  Serial.print("Distance: ");
+  Serial.println(distance);
   
-  if (analogRead(stopPin)>= 170){ //don't move robot when speaker is being used
-    leftLeg.write(0);
-    rightLeg.write(0);
+  //if (analogRead(stopPin)> 0){ //don't move robot when speaker is being used
+  //  Serial.println("Stopped while talking");
+  //  leftLeg.write(90);
+  //  rightLeg.write(90);
+  //}
+  if (distance > 300) {
+    Serial.println("Turning, distance > 400");
+    leftLeg.write(140);//leftSpeed-20
+    rightLeg.write(140); //rightSpeed+20
   }
-  else if (distance > 400) {
-    //Serial.println("Turning, distance > 400");
-    leftLeg.write(generalSpeed+20);
-    rightLeg.write(0);
-  }
-  else{
-    leftLeg.write(generalSpeed);
-    rightLeg.write(generalSpeed);
-    //Serial.println("Both running");
+  else if (analogRead(stopPin)==0){
+    leftLeg.write(leftSpeed);
+    rightLeg.write(rightSpeed);
+    Serial.println("Both running");
     //Serial.println(generalSpeed);
   }
 
