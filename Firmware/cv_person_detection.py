@@ -183,7 +183,7 @@ class ProcessingEngine:
         net = self.detect_dict  # select the image processor (net)
         blob = cv2.dnn.blobFromImage(frame,
                                         1 / 255.0,
-                                        (64,64), # Reading frame, smaller values run faster
+                                        (32,32),#(48,48), # Reading frame, smaller values run faster
                                         swapRB=True,
                                         crop=False)  # pre=process the image for detection
 
