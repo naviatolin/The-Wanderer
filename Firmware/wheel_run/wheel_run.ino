@@ -18,39 +18,31 @@ int distance = 5000; //large distance so it doesn't set off stop yet
 //int s = 0;
 
 //Raspi communication
-int cameraPin = A1; //11
-//int stopPin = A2;
+int cameraPin = A1; //notification from raspi for seeing a person
+int battOutputPin = A2; //outputs a battery low signal to raspi 
+int battInputPin = A3; //reads the current battery voltage
+
 
 void setup() {
   leftLeg.attach(9);
   rightLeg.attach(10);
-  pinMode(cameraPin, OUTPUT);
-  //pinMode(stopPin, OUTPUT);
+  pinMode(cameraPin, INPUT);
+  pinMode(battInputPin, INPUT);
+  pinMode(battOutputPin, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  //allows us to change default speed of robot without recompiling code
-  //if (Serial.available() > 0) { //if there's bytes available
-  //  incomingVal = Serial.readString(); //read the incoming byte
-  //  s = (incomingVal.toInt()); //convert it to an int
-  //  angle = s + angle; //change speed based on input
-  //  headServo.write(angle);
-  //  Serial.println(angle);
-  //}
-
-  //robot's normal forward speed
   delay(1000);
   //Serial.print("Seen: ");
   //Serial.println(analogRead(cameraPin)>=170);
-  //Serial.print(", Held: ");
-  //Serial.println(analogRead(stopPin));
+  int batt = analogRead(battInputPin); //This looks pretty good
+  analogWrite(battOutputPin, batt/12); //isn't working to send to raspi yet
+  Serial.print("Battery reading: ");
+  Serial.print(batt);
+  Serial.print(" -> ");
+  Serial.println(batt/12);
   
-  //if (analogRead(cameraPin)>=170){
-  //  Serial.println("Person seen, stopping");
-  //  leftLeg.write(90); //90 is stop
-  //  rightLeg.write(90);   
-  //}
   distance = analogRead(prox_sensor);
   Serial.print("Distance: ");
   Serial.println(distance);
@@ -62,13 +54,15 @@ void loop() {
   }
   else if (distance > 300) {
     Serial.println("Turning, distance > 400");
-    leftLeg.write(140);//leftSpeed-20
-    rightLeg.write(140); //rightSpeed+20
+    leftLeg.write(140);//one of the motors is reverse polarity
+    rightLeg.write(140); //
   }
   else if (analogRead(cameraPin)<170){
     Serial.println("Both running");
     leftLeg.write(leftSpeed);
     rightLeg.write(rightSpeed);
+    
+    //Serial.print("Speed: ");
     //Serial.println(generalSpeed);
   }
 
