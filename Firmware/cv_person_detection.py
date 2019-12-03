@@ -40,11 +40,11 @@ class ProcessingEngine:
 
         self.cap_dict = {}  # store the OpenCV captures in a dictionary
         self.detect_dict = {}  # store detected outputs in a dictionary
-        
+
         self.sees_person = False
 
         # How closely to look at the image, 1:(320,320) looks closer than 2:(128,128)
-        self.reading_frames = {1: (320, 320), 2: (128, 128), 3: (96, 96)}
+        self.reading_frames = {1: (320, 320), 2: (128, 128), 3: (96, 96), 4:(32,32)}
 
     def turn_on(self):
         """
@@ -181,8 +181,11 @@ class ProcessingEngine:
         width = self.cap_dict[4][1]
 
         net = self.detect_dict  # select the image processor (net)
-        blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (64,64),
-                                     swapRB=True, crop=False)  # pre=process the image for detection
+        blob = cv2.dnn.blobFromImage(frame,
+                                        1 / 255.0,
+                                        (64,64), # Reading frame, smaller values run faster
+                                        swapRB=True,
+                                        crop=False)  # pre=process the image for detection
 
         # run detection on the frame:
         net.setInput(blob)
