@@ -19,19 +19,20 @@ def main():
         status = False
         status = engine.person_detected()
         
-        if not gpio.input(40): #battery is low
-            talk("batt") #communicate that its low
+        #if not gpio.input(40): #battery is low
+            #talk("batt") #communicate that its low
+         #   print("batt low")
                                                                                         
         if status and previous:
             gpio.output(36, gpio.HIGH) #person seen, robot stops moving
-            time.sleep(2) # wait 2 seconds for the arduino to stop completely
+            #time.sleep(2) # wait 2 seconds for the arduino to stop completely
 
             # say hi
             talk("hi")
             print("hi")
 
             # say bye and don't move while you are speaking
-            time.sleep(16)
+            time.sleep(14)
             print("bye")
             talk("bye")
             previous = 0
