@@ -23,11 +23,11 @@ class ProcessingEngine:
         cwd = os.getcwd()
         self.DETECTION_THRESHOLD = 0.4  # minimum confidence level for person to be recognized
         print(cwd)
-        labelsPath = os.path.sep.join(["yolo-coco","coco.names"])
 
-        self.weightsPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.weights"])
-        self.configPath = os.path.sep.join([cwd, 'yolo-coco', "yolov3.cfg"])
+        labelsPath = "/home/pi/The-Wanderer/Firmware/yolo-coco/coco.names"
 
+        self.weightsPath = "/home/pi/The-Wanderer/Firmware/yolo-coco/yolov3.weights"
+        self.configPath = "/home/pi/The-Wanderer/Firmware/yolo-coco/yolov3.cfg"
         self.LABELS = open(labelsPath).read().strip().split("\n")
 
         self.ln = 0  # a placeholder (for determining only the *output* layer names that we need from YOLO)
