@@ -14,38 +14,32 @@ def main():
     previous = 0
     while True:
         gpio.setmode(gpio.BOARD) #gpio.BCM
-        gpio.setup(36, gpio.OUT) # am I seeing people
-        gpio.setup(40, gpio.OUT) # should I stop
+        gpio.setup(36, gpio.OUT) # to communicate to Arduino if person is seen
+        gpio.setup(40, gpio.IN, pull_up_down=gpio.PUD_DOWN) # battery power voltage reading
         status = False
         status = engine.person_detected()
+        
+        #if not gpio.input(40): #battery is low
+            #talk("batt") #communicate that its low
+         #   print("batt low")
+                                                                                        
         if status and previous:
-            gpio.output(36, gpio.HIGH)
-            time.sleep(2) # wait 2 seconds for the arduino to stop completely
+            gpio.output(36, gpio.HIGH) #person seen, robot stops moving
+            #time.sleep(2) # wait 2 seconds for the arduino to stop completely
 
-            # say hi and don't move while you are speaking
-            done_hi = talk("hi")
+            # say hi
+            talk("hi")
             print("hi")
-            while done_hi is 0:
-                gpio.output(40,gpio.HIGH)
-            
-            gpio.output(40, gpio.LOW)
 
             # say bye and don't move while you are speaking
+            time.sleep(14)
             print("bye")
-            done_bye = talk("bye")
-            while done_bye is 0:
-                gpio.output(40,gpio.HIGH)
-            
-            gpio.output(40, gpio.LOW)
-            time.sleep(2)
+            talk("bye")
             previous = 0
         else:
             gpio.output(36, gpio.LOW)
-            gpio.output(40, gpio.LOW)
             previous = 1
-
-        time.sleep(6)
-        #gpio.cleanup()
+        gpio.cleanup()
 
 if __name__ == '__main__':
     try:
