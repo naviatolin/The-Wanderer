@@ -18,10 +18,9 @@ int distance = 5000; //large distance so it doesn't set off stop yet
 //int s = 0;
 
 //Raspi communication
-int cameraPin = A1; //notification from raspi for seeing a person
-int battOutputPin = A2; //outputs a battery low signal to raspi 
-int battInputPin = A3; //reads the current battery voltage
-
+int cameraPin = A1; //notification from raspi for seeing a person 
+int battInputPin = A2; //reads the current battery voltage
+int battOutputPin = 11; //outputs a battery low signal to raspi
 
 void setup() {
   leftLeg.attach(9);
@@ -34,36 +33,41 @@ void setup() {
 
 void loop() {
   delay(1000);
-  //Serial.print("Seen: ");
-  //Serial.println(analogRead(cameraPin)>=170);
-  int batt = analogRead(battInputPin); //This looks pretty good
-  analogWrite(battOutputPin, batt/12); //isn't working to send to raspi yet
+
   Serial.print("Battery reading: ");
-  Serial.print(batt);
-  Serial.print(" -> ");
-  Serial.println(batt/12);
+  Serial.print(analogRead(battInputPin)); //analog voltage is 0-1024 where 1024 is 5V
+  //low battery signal is for 4.8V or analog V 985
+  if (analogRead(battInputPin)<=985){
+    Serial.println(" -> Low Battery");
+    digitalWrite(battOutputPin, LOW); //low battery signal to raspi
+  }
+  else{
+    Serial.println(" -> Good Battery");
+    digitalWrite(battOutputPin, HIGH);
+  }
   
   distance = analogRead(prox_sensor);
-  Serial.print("Distance: ");
-  Serial.println(distance);
-  
-  if (analogRead(cameraPin)>=170){ //don't move robot when speaker is being used
+  //Serial.print("Distance: ");
+  //Serial.println(distance);
+
+  //Serial.print("Seen: ");
+  //Serial.println(analogRead(cameraPin)>=170);
+  if (analogRead(cameraPin)>=170){ // Robot stops when speaker is being used
     Serial.println("Stopped while talking");
     leftLeg.write(90);
     rightLeg.write(90);
   }
   else if (distance > 300) {
-    Serial.println("Turning, distance > 400");
-    leftLeg.write(140);//one of the motors is reverse polarity
-    rightLeg.write(140); //
+    Serial.println("Turning, distance > 300");
+    leftLeg.write(140); // one of the motors is reverse polarity, so one wheel goes backwards
+    rightLeg.write(140);
   }
   else if (analogRead(cameraPin)<170){
     Serial.println("Both running");
     leftLeg.write(leftSpeed);
     rightLeg.write(rightSpeed);
-    
     //Serial.print("Speed: ");
-    //Serial.println(generalSpeed);
+    //Serial.println(rightSpeed);
   }
 
 }
