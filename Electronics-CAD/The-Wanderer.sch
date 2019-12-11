@@ -36,7 +36,7 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 1550 3060
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:IR_sensor U1
+L The-Wanderer-rescue:IR_sensor-Raspberry_Pi_2_or_3 U1
 U 1 1 5DF263DA
 P 3650 2350
 F 0 "U1" H 3600 2450 50  0000 L CNN
@@ -63,19 +63,6 @@ F 3 "~" V 3850 1160 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 2650 2250 2650
-$Comp
-L Device:Voltage_Divider RN2
-U 1 1 5DF46FB6
-P 4100 1500
-F 0 "RN2" V 3900 1500 50  0000 C CNN
-F 1 "Voltage_Divider" V 4000 1500 50  0000 C CNN
-F 2 "" V 4575 1500 50  0001 C CNN
-F 3 "~" H 4300 1500 50  0001 C CNN
-	1    4100 1500
-	0    1    -1   0   
-$EndComp
-Text Label 4100 1200 3    50   ~ 0
-5V
 $Comp
 L power:GND #PWR?
 U 1 1 5DF4FBFA
@@ -126,7 +113,7 @@ F 3 "" H 4500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:Raspi_Speaker LS1
+L The-Wanderer-rescue:Raspi_Speaker-Raspberry_Pi_2_or_3 LS1
 U 1 1 5DF1BB42
 P 4400 3250
 F 0 "LS1" H 4550 3350 50  0000 L CNN
@@ -137,7 +124,7 @@ F 3 "~" H 4390 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:Raspberry_Pi_3 J1
+L The-Wanderer-rescue:Raspberry_Pi_3-Raspberry_Pi_2_or_3 J1
 U 1 1 5DF103EF
 P 5400 2450
 F 0 "J1" H 5400 3931 50  0000 C CNN
@@ -174,13 +161,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 1150 5200 900 
 Wire Wire Line
-	5200 900  4100 900 
-Wire Wire Line
-	4100 900  4100 1350
-Connection ~ 4100 900 
-Wire Wire Line
-	2700 900  4100 900 
-Wire Wire Line
 	3400 2650 3400 1350
 Wire Wire Line
 	3400 1350 2700 1350
@@ -190,17 +170,8 @@ Connection ~ 2700 1350
 Wire Wire Line
 	2700 1350 2700 1400
 Wire Wire Line
-	3850 1500 3850 1300
-Wire Wire Line
 	4450 1000 4450 1050
-Wire Wire Line
-	3850 1000 4350 1000
-Wire Wire Line
-	4350 1000 4350 1500
-Connection ~ 4350 1000
-Wire Wire Line
-	4350 1000 4450 1000
-Text Label 3850 1450 1    50   ~ 0
+Text Label 4050 1300 2    50   ~ 0
 12V
 Text Label 4100 900  0    50   ~ 0
 5V
@@ -234,7 +205,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 2700 2050 1300
 $Comp
-L POE_Elias:Arduino_UNO_R3 A1
+L The-Wanderer-rescue:Arduino_UNO_R3-POE_Elias A1
 U 1 1 5DEEA028
 P 2800 2450
 F 0 "A1" H 2800 1261 50  0000 C CNN
@@ -294,4 +265,31 @@ Wire Wire Line
 Connection ~ 3450 3450
 Wire Wire Line
 	3450 3450 3450 2400
+$Comp
+L Raspberry_Pi_2_or_3:5V_2A_Voltage_Converter B1
+U 1 1 5DF0F40C
+P 4300 1500
+F 0 "B1" V 4350 1500 50  0000 R CNN
+F 1 "5V_2A_Voltage_Converter" V 4450 2150 50  0000 R CNN
+F 2 "" H 4300 1500 50  0001 C CNN
+F 3 "" H 4300 1500 50  0001 C CNN
+	1    4300 1500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3850 1000 4150 1000
+Wire Wire Line
+	4150 1300 4150 1000
+Connection ~ 4150 1000
+Wire Wire Line
+	4150 1000 4450 1000
+Wire Wire Line
+	4200 1300 4200 900 
+Wire Wire Line
+	2700 900  4200 900 
+Connection ~ 4200 900 
+Wire Wire Line
+	4200 900  5200 900 
+Wire Wire Line
+	4050 1300 3850 1300
 $EndSCHEMATC

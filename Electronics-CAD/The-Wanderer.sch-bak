@@ -4,7 +4,7 @@ EELAYER END
 $Descr User 7874 5906
 encoding utf-8
 Sheet 1 1
-Title "Wanderer Circuit"
+Title "The Wanderer Circuit"
 Date "2019-12-09"
 Rev ""
 Comp "Case Zito"
@@ -36,7 +36,7 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 1550 3060
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:IR_sensor U1
+L The-Wanderer-rescue:IR_sensor-Raspberry_Pi_2_or_3 U1
 U 1 1 5DF263DA
 P 3650 2350
 F 0 "U1" H 3600 2450 50  0000 L CNN
@@ -126,7 +126,7 @@ F 3 "" H 4500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:Raspi_Speaker LS1
+L The-Wanderer-rescue:Raspi_Speaker-Raspberry_Pi_2_or_3 LS1
 U 1 1 5DF1BB42
 P 4400 3250
 F 0 "LS1" H 4550 3350 50  0000 L CNN
@@ -137,7 +137,7 @@ F 3 "~" H 4390 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Raspberry_Pi_2_or_3:Raspberry_Pi_3 J1
+L The-Wanderer-rescue:Raspberry_Pi_3-Raspberry_Pi_2_or_3 J1
 U 1 1 5DF103EF
 P 5400 2450
 F 0 "J1" H 5400 3931 50  0000 C CNN
@@ -234,7 +234,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 2700 2050 1300
 $Comp
-L POE_Elias:Arduino_UNO_R3 A1
+L The-Wanderer-rescue:Arduino_UNO_R3-POE_Elias A1
 U 1 1 5DEEA028
 P 2800 2450
 F 0 "A1" H 2800 1261 50  0000 C CNN
@@ -294,4 +294,37 @@ Wire Wire Line
 Connection ~ 3450 3450
 Wire Wire Line
 	3450 3450 3450 2400
+$Comp
+L Regulator_Switching:LM2594M-5.0 U?
+U 1 1 5DF01DAD
+P 6800 850
+F 0 "U?" H 6800 1217 50  0000 C CNN
+F 1 "LM2594M-5.0" H 6800 1126 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 600 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 6800 950 50  0001 C CNN
+	1    6800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2594M-5.0 U?
+U 1 1 5DF04CD1
+P 6800 1650
+F 0 "U?" H 6800 2017 50  0000 C CNN
+F 1 "LM2594M-5.0" H 6800 1926 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 1400 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 6800 1750 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2594M-5.0 U?
+U 1 1 5DF05DEB
+P 6800 2350
+F 0 "U?" H 6800 2717 50  0000 C CNN
+F 1 "LM2594M-5.0" H 6800 2626 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 2100 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 6800 2450 50  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
