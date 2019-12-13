@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goals on Hugo Whisper Theme</title>
+    <link>http://poe.olin.edu/2019/wanderer/sprints/</link>
+    <description>Recent content in Goals on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://poe.olin.edu/2019/wanderer/sprints/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sprint 1</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a robot that walks around and can sense walls&lt;/li&gt;
+&lt;li&gt;Show proof-of-concept for components
+&lt;ul&gt;
+&lt;li&gt;Computer vision demonstration&lt;/li&gt;
+&lt;li&gt;Walking mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Robot walks and can sense walls. It is able to turn before the wall
+&lt;ul&gt;
+&lt;li&gt;Computer vision can recognize people&lt;/li&gt;
+&lt;li&gt;Basic walking mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 2</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</guid>
+      <description>&lt;p&gt;We want to develop the personality of the robot more especially with mechanical design and do a lot of user testing to make sure that the robot is &amp;ldquo;cute&amp;rdquo; and personable.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement computer vision on the Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Use Raspberry Pi to communicate with Arduino&lt;/li&gt;
+&lt;li&gt;Improve walking mechanism&lt;/li&gt;
+&lt;li&gt;Develop robot appearance/personality especially making it &amp;ldquo;cute&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Moves with improved linkage leg mechanism&lt;/li&gt;
+&lt;li&gt;Can identify people with the Raspi camera&lt;/li&gt;
+&lt;li&gt;Has fluffy &amp;ldquo;pink monster&amp;rdquo; appearance people found cute&lt;/li&gt;
+&lt;li&gt;The walking mechanism has a wobble aspect which adds a cute personality factor&lt;/li&gt;
+&lt;li&gt;Arduino LED lights up when Raspi sees a person (10 sec)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 3</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrate mechanical electrical and software systems&lt;/li&gt;
+&lt;li&gt;Scale up to final size&lt;/li&gt;
+&lt;li&gt;Increase mechanical robustness (no hot glue!)&lt;/li&gt;
+&lt;li&gt;Run on battery power&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Attached new motor servos&lt;/li&gt;
+&lt;li&gt;Added battery and convert its power for other components&lt;/li&gt;
+&lt;li&gt;Arduino and Raspi wired to each other on chassis and communicate back and forth, with Arduino controlling movement and the Raspi monitoring computer vision and using the speaker&lt;/li&gt;
+&lt;li&gt;Stronger larger design that is wood glued, not hot glued&lt;/li&gt;
+&lt;li&gt;Added ribs on chassis over electronics to give round shape to body and fur&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 4</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add low battery notification (over speaker)&lt;/li&gt;
+&lt;li&gt;Redesign chassis to organize electronics for better access&lt;/li&gt;
+&lt;li&gt;Make shape rounder&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Modify sounds to be more cute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added low battery notification sound by having the Arduino sense voltage from Battery, output digital high or low, convert that voltage to 3.3V range for Raspi, and have Raspi output battery low sound&lt;/li&gt;
+&lt;li&gt;Added more small ribs to structure give a gradual rounding shape&lt;/li&gt;
+&lt;li&gt;Redesigned chassis and had threaded inserts for parts so they held better&lt;/li&gt;
+&lt;li&gt;Decided against modified sounds because we liked the attitude of them (very attention getting)&lt;/li&gt;
+&lt;li&gt;Finished up Documentation&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

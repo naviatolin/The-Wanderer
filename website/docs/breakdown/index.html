@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Component Breakdown - Hugo Whisper Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://poe.olin.edu/2019/wanderer/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/2019/wanderer/css/style.min.d0149e46d37ed09a60f55899204505f757aeb152bb817cdb02a1a2bf5728bb6b.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown active">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown active">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Breakdown</h4>
+  <ul>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/">Electrical Breakdown</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/">Mechanical Breakdown</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/software/software/">Software Breakdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+<span class="overview">Overview</span>
+<h1 class="title">Component Breakdown</h1>
+<div class="content">
+  <p>Here is how it was made!</p>
+
+</div>
+
+
+<div class="summary mb-2">
+  
+  <h2 class="title-summary"><a href="http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/">Electrical Breakdown</a></h2>
+  <p><p>For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors. Two voltage dividers were needed to allow signal capture while preventing pin damage. The rest of the electrical was connecting components so that the software team has everything they need to program the robot behavior. The schematic for the electrical design is below, and subsystem descriptions follow.</p></p>
+</div>
+
+
+<div class="summary mb-2">
+  
+  <h2 class="title-summary"><a href="http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/">Mechanical Breakdown</a></h2>
+  <p><p>There are two main components to the mechanical design: the legs and the chassis. We chose a four-bar linkage mechanism for the legs because it gave the tottering movement we wanted without being too complicated. The leg mechanism uses one continuous rotation servo for each side, giving a total of two.</p></p>
+</div>
+
+
+<div class="summary mb-2">
+  
+  <h2 class="title-summary"><a href="http://poe.olin.edu/2019/wanderer/breakdown/software/software/">Software Breakdown</a></h2>
+  <p><p>Github: <a href="https://github.com/naviatolin/The-Wanderer">https://github.com/naviatolin/The-Wanderer</a></p></p>
+</div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/2019/wanderer/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Sprint 4 - Hugo Whisper Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://poe.olin.edu/2019/wanderer/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/2019/wanderer/css/style.min.d0149e46d37ed09a60f55899204505f757aeb152bb817cdb02a1a2bf5728bb6b.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Sprints</h4>
+  <ul>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/sprints/sprint-1/">Sprint 1</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/sprints/sprint-2/">Sprint 2</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/sprints/sprint-3/">Sprint 3</a>
+    </li>
+    
+    <li class="active ">
+      <a href="http://poe.olin.edu/2019/wanderer/sprints/sprint-4/">Sprint 4</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Sprint 4</h1>
+<div class="content ">
+  <h2 id="goals">Goals:</h2>
+<ul>
+<li>Add low battery notification (over speaker)</li>
+<li>Redesign chassis to organize electronics for better access</li>
+<li>Make shape rounder</li>
+<li>Documentation</li>
+<li>Modify sounds to be more cute</li>
+</ul>
+<h2 id="progress">Progress:</h2>
+<ul>
+<li>Added low battery notification sound by having the Arduino sense voltage from Battery, output digital high or low, convert that voltage to 3.3V range for Raspi, and have Raspi output battery low sound</li>
+<li>Added more small ribs to structure give a gradual rounding shape</li>
+<li>Redesigned chassis and had threaded inserts for parts so they held better</li>
+<li>Decided against modified sounds because we liked the attitude of them (very attention getting)</li>
+<li>Finished up Documentation</li>
+</ul>
+<h2 id="mechanical">Mechanical</h2>
+<ul>
+<li>Redesign chassis so that components are easier to access</li>
+<li>Chassis has round, semi-circle design, with ribs in the front instead of hardboard to add a round face</li>
+<li>Create a hardboard protrusion with a circle to come out of the fur as a fake &ldquo;nose&rdquo; that has the camera</li>
+</ul>
+<p><img src="IMG_3527.jpg" alt="asdf">
+<!-- raw HTML omitted --></p>
+<p><img src="electronic_pic.jpg" alt="asdf">
+<!-- raw HTML omitted --></p>
+<h2 id="electrical">Electrical</h2>
+<ul>
+<li>Create a voltage divider with a factor of 4.54 to scale down 5V output of Arduino low battery signal to 3.3V for the Raspi</li>
+<li>Create an updated circuit schematic</li>
+</ul>
+<p><img src="voltage_divider.png" alt="asdf">
+<!-- raw HTML omitted --></p>
+<h2 id="software">Software</h2>
+<ul>
+<li>Add variables to Arduino and Raspi to handle reading and communication of battery</li>
+</ul>
+<h2 id="design">Design</h2>
+<ul>
+<li>Order new googly eyes and placed them to give a fun monster vibe</li>
+<li>Tape the nose to mask the camera and cover the hardboard so it's a simple black nose</li>
+</ul>
+<p><img src="IMG_3530.jpg" alt="asdf">
+<!-- raw HTML omitted --></p>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/2019/wanderer/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

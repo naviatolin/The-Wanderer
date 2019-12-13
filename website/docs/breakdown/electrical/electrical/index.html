@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Electrical Breakdown - Hugo Whisper Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://poe.olin.edu/2019/wanderer/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/2019/wanderer/css/style.min.d0149e46d37ed09a60f55899204505f757aeb152bb817cdb02a1a2bf5728bb6b.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Breakdown</h4>
+  <ul>
+    
+    <li class="active ">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/">Electrical Breakdown</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/">Mechanical Breakdown</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/software/software/">Software Breakdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Electrical Breakdown</h1>
+<div class="content ">
+  <p>For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors. Two voltage dividers were needed to allow signal capture while preventing pin damage. The rest of the electrical was connecting components so that the software team has everything they need to program the robot behavior. The schematic for the electrical design is below, and subsystem descriptions follow.</p>
+<p><img src="The-Wanderer.png" alt="Electrical/The-Wanderer.png"></p>
+<h2 id="power-conversion">Power Conversion:</h2>
+<ul>
+<li>The 12V battery directly powers the Arduino while the Raspberry Pi and Servos require 5V with significant current. We used 4 5V 0.5A voltage converters in parallel to provide ample power. We chose these components because they were readily accessible and simple to implement; providing 12V and ground, these ICs output 0.5A at 5V with proper heat dissipation. We needed to supply at least 1A of current to the Raspberry Pi to keep up with sustained peak load while processing images, so we doubled the power capacity of the conversion circuit to accommodate any future components, which turned out to be the servos. A simpler thing would be to use a 5V 2A voltage converter (linked in our bill of materials).</li>
+</ul>
+<h2 id="voltage-dividers">Voltage Dividers:</h2>
+<ul>
+<li>Battery monitoring by Arduino- To prevent overdraw of the battery, we want the system to measure the level of the battery. With a range of 10.8-12.6V, the Arduino cannot natively sample the battery level, so we constructed a voltage divider with a scale factor of 0.231, placing the measured battery level in the 2.5-3.0V range. The resistor values used for this divider are 9k and 30k, where 9k/(9k+30k) = 0.231.</li>
+<li>Low battery signal from Arduino to Raspberry Pi- The Raspberry Pi and Arduino have differing logic levels of 5V and 3.3V, respectively. For the Arduino to indicate a low battery, its 5V digital signal must drop to 3.3V. Since this connection is only one way, we used a voltage divider with a scale factor of 0.66. The resistor values used for this were 10k and 20k, giving 10k/(10k+20k) = 0.66.</li>
+</ul>
+<h2 id="arduino-pins">Arduino Pins:</h2>
+<p>Arduino directly powered by the battery through the barrel jack</p>
+<ul>
+<li>A0- connected to the output of the infrared sensor</li>
+<li>A1- connected to the Raspi pin 36, the cameraPin</li>
+<li>A2- measures the battery level through a voltage divider, the battInputPin</li>
+<li>D8- sends the &ldquo;low battery signal&rdquo; to the Arduino through a voltage divider input, battOutputPin</li>
+<li>D9- PWM signal for the left servo motor</li>
+<li>D10- PWM for the right servo motor</li>
+</ul>
+<h2 id="raspberry-pi-pins">Raspberry Pi Pins:</h2>
+<p>Raspberry Pi powered by the 5V2A converter on pins 4 and 6.</p>
+<ul>
+<li>GPIO16 (pin 36)- sends person detection indication to Arduino (cameraPin)</li>
+<li>GPIO21 (pin 40)- receives low battery indication from Arduino through a voltage divider</li>
+<li>USB- USB speaker for sounds</li>
+<li>Note: In order to program the Raspberry Pi, we used a wireless mouse and keyboard and then plugged a monitor into the HDMI</li>
+</ul>
+<h2 id="other-components">Other Components:</h2>
+<ul>
+<li>The IR sensor is powered and monitored by the Arduino</li>
+<li>The servos are powered by the 5V2A converter and controlled by the Arduino's PWMs</li>
+</ul>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/2019/wanderer/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

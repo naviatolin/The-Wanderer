@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Software Breakdown - Hugo Whisper Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://poe.olin.edu/2019/wanderer/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/2019/wanderer/css/style.min.d0149e46d37ed09a60f55899204505f757aeb152bb817cdb02a1a2bf5728bb6b.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://poe.olin.edu/2019/wanderer"><img alt="Logo" src="/2019/wanderer/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/2019/wanderer/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-beepboop">
+      <a href="/2019/wanderer/beepboop/">
+        <span>BeepBoop</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-breakdown">
+      <a href="/2019/wanderer/breakdown/">
+        <span>Breakdown</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-sprints">
+      <a href="/2019/wanderer/sprints/">
+        <span>Sprints</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-bom">
+      <a href="/2019/wanderer/bom/">
+        <span>BOM</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-logs">
+      <a href="/2019/wanderer/logs/">
+        <span>Logs</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-team">
+      <a href="/2019/wanderer/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Breakdown</h4>
+  <ul>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/">Electrical Breakdown</a>
+    </li>
+    
+    <li class="">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/">Mechanical Breakdown</a>
+    </li>
+    
+    <li class="active ">
+      <a href="http://poe.olin.edu/2019/wanderer/breakdown/software/software/">Software Breakdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Software Breakdown</h1>
+<div class="content ">
+  <p>Github: <a href="https://github.com/naviatolin/The-Wanderer">https://github.com/naviatolin/The-Wanderer</a></p>
+<h3 id="communication-between-raspberry-pi-and-arduino">Communication between Raspberry Pi and Arduino</h3>
+<p>Initially, we were going to use some form of serial communication to exchange information between the Raspberry Pi and Arduino. We successfully prototyped this but eventually scrapped it in favor of simple digital pin indicators, even though this meant some extra hardware. The Raspberry Pi sends a digital signal to the Arduino to indicate the presence of a person, at which point the Arduino stops the motors. The Raspberry Pi is 3.3V logic level, so the Arduino measures this digital signal on an analog pin. In the final product, we set the Arduino to test the battery level and relay whether it is below a set level or not to the Raspberry Pi via a digital pin.</p>
+<h3 id="arduino-wheelrun-code">Arduino &ldquo;Wheelrun&rdquo; Code</h3>
+<p>The Arduino's main function is to control the movement of the robot. The proxPin reads analog voltage from the IR sensor and at a certain threshold the code has the robot turn (one wheel going forward, the other backward) in order to avoid obstacles. The Arduino also monitors the battery level through the battInputPin and converts the signal to a High or Low out of the battOutputPin to communicate low battery to the Raspi. From the Raspi, the cameraPin tells the Arduino to stop when the Raspi sees a person.</p>
+<h3 id="raspberry-pi-i2c-demo-code">Raspberry Pi &ldquo;I2C_demo&rdquo; Code</h3>
+<p>For part of our prototyping process, we explored having the Raspberry Pi and Arduino communicate with I2C. Although we used digital pins in the end, we did successfully exchange information between them using I2C. In I2C_demo we have the Raspberry Pi look for people through the Raspi camera, then tell the Arduino if it sees them through the pin 36. The Raspi also handles the speaker for the robot. If it receives a low battery signal from the Arduino through pin 40, it outputs a &ldquo;low battery&rdquo; sound. When the camera sees a person it outputs a &ldquo;hello&rdquo; noise and after 8 seconds, roughly the time it takes to process that a person would no longer be there, it outputs a &ldquo;goodbye&rdquo; noise.</p>
+<h3 id="computer-vision-code">Computer Vision Code</h3>
+<p>Using OpenCV for Python, we used an implementation of the YOLO-COCO algorithm from a previous software project. This is the most computationally intense part of the project and is why we added the Raspberry Pi to the Wanderer. YOLO-COCO breaks in image down into an array of variously sized pieces (called a blob) and treats each with a large (300MB) weights file to detect a wide range of objects. To minimize computation time and increase robot responsiveness, we reduced the blob size to a minimum, sacrificing some detection ability. In the future, we would probably switch to a more specialized version of YOLO-COCO to reduce computational load.</p>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/2019/wanderer/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
