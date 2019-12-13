@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name The-Wanderer-rescue)(type Legacy)(uri ${KIPRJMOD}/The-Wanderer-rescue.lib)(options "")(descr ""))
+)
