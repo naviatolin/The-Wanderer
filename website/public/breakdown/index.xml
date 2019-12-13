@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Component Breakdown on Hugo Whisper Theme</title>
+    <link>http://poe.olin.edu/2019/wanderer/breakdown/</link>
+    <description>Recent content in Component Breakdown on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="http://poe.olin.edu/2019/wanderer/breakdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Electrical Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/</guid>
+      <description>For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors.</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/</guid>
+      <description>There are two main components to the mechanical design: the legs and the chassis.</description>
+    </item>
+    
+    <item>
+      <title>Software Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/software/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/software/software/</guid>
+      <description>Github: https://github.com/naviatolin/The-Wanderer
+Communication between Raspberry Pi and Arduino Initially, we were going to use some form of serial communication to exchange information between the Raspberry Pi and Arduino.</description>
+    </item>
+    
+  </channel>
+</rss>

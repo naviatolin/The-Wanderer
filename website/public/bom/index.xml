@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BOM on Hugo Whisper Theme</title>
+    <link>http://poe.olin.edu/2019/wanderer/bom/</link>
+    <description>Recent content in BOM on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="http://poe.olin.edu/2019/wanderer/bom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bill of Materials</title>
+      <link>http://poe.olin.edu/2019/wanderer/bom/bill-of-materials/bom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/bom/bill-of-materials/bom/</guid>
+      <description>Object Unit Price Owned Prior Or Made In House Amount Used For What Total Price     Raspberry PI $40.</description>
+    </item>
+    
+  </channel>
+</rss>

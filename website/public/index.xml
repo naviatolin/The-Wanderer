@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Wanderer on Hugo Whisper Theme</title>
+    <link>http://poe.olin.edu/2019/wanderer/</link>
+    <description>Recent content in The Wanderer on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="http://poe.olin.edu/2019/wanderer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oct 18, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/1/in-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/1/in-class/</guid>
+      <description>Goals  Get started on the individual tasks that we have assigned.</description>
+    </item>
+    
+    <item>
+      <title>Oct 25, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/2/sprint-1-reflection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/2/sprint-1-reflection/</guid>
+      <description>Sprint 1 Reflection Plusses Navi  We worked really well together on gettting things done and had great communication Came up with clear implementation plans very quickly Ideated well We vibed  Michael  Mental Health transparency Lots of CV work ported over from SP19 Communication Lots done in class Progress updates  Case  good communication good product, i feel accomplished we&#39;re sticking to our goals and routines well felt listened to in meetings got everything we wanted to done!</description>
+    </item>
+    
+    <item>
+      <title>Oct 27, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/3/sprint-2-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/3/sprint-2-start/</guid>
+      <description>Sprint 2 Start Goals  Assigning tasks for sprint Making a sprint calendar knowing sprint goals start working on sprint tasks talk about personality and do some ideation  What Did We Get Done  we got sprint 1 finished  Reflection (Where could we improve in the future?</description>
+    </item>
+    
+    <item>
+      <title>Oct 29, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/4/feedback-and-leg-mechanism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/4/feedback-and-leg-mechanism/</guid>
+      <description>Feedback and Leg Mechanism Goals  Figure out our feedback Finalize the leg mechanism  What Did We Get Done  Got the raspberry pi partially set up (getting python 3 and open cv stuff on it) stared at leg mechanism made progress started on getting the website up  Reflection (Where could we improve in the future?</description>
+    </item>
+    
+    <item>
+      <title>Nov 01, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/5/meeting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/5/meeting/</guid>
+      <description>Goals  Decide what we want for our team bonding Tonight: Have dinner, have fun  What Did We Get Done  Anna researched wheels Navi got first pages of github website showing We ran into an error where the raspberry pi crashed every time we tried to run the python code to detect people.</description>
+    </item>
+    
+    <item>
+      <title>Nov 03, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/6/leg-and-cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/6/leg-and-cv/</guid>
+      <description>Leg and CV! Goals  Figure out the rest of the CV situation Figure out the chassis and leg situation  What Did We Get Done  We fixed the issue with the CV crashing the raspberry pi.</description>
+    </item>
+    
+    <item>
+      <title>Nov 05, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/7/in-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/7/in-class/</guid>
+      <description>Goals  Construct the prototype from lasercut pieces Start working on different skins  What Did We Get Done  We got the Raspberry pi and the arduino to communication using i2c.</description>
+    </item>
+    
+    <item>
+      <title>Nov 10, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/8/sprint-3-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/8/sprint-3-start/</guid>
+      <description>Sprint 3 Start Goals  Look at slide feedback and reflect Look at sprint goals and create tasks for the sprint decide what things we will buy this week Test out prototype and see how it moves Integration mechanical goal: making working chassis Mechanical mechanical goal: increasing stability of legs, 3D print attachment, order better motors Software goals: comp vis to moving something, get speakers to work, get LCD working Figure out how to integrate more as a team  What Did We Get Done  Set goals for sprint planed out tasks for sprint decided things to order split up tasks for software and made smaller due dates  </description>
+    </item>
+    
+    <item>
+      <title>Nov 12, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/9/in-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/9/in-class/</guid>
+      <description>Goals  Mechanical: decide on a chassis design, get cadding chat with aaron about stability and weights finish figuring out raspi arduino stuff brainstorm and try different code  What Did We Get Done  Case&amp;amp;Navi: Looked at digital IO on Raspi, played with camera angles (45deg is best), block diagrams/state machine of robot behavior Anna &amp;amp; Michael: Sketched out chassis stuff, talked about motor power and structure stability, walks with weights Michael: Ordered perfboard for the circuit Order sheet: IR sensor, speaker, motor, battery  </description>
+    </item>
+    
+    <item>
+      <title>Nov 15, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/10/in-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/10/in-class/</guid>
+      <description>Goals  raspi arduino communication put holes in the cad get the crank cad started block diagram  What Did We Get Done  block diagram   we have successfully communicated whether or not we see people between the arduino and the raspberry pi started the crank cad holes in the cad  </description>
+    </item>
+    
+    <item>
+      <title>Nov 19, 2019</title>
+      <link>http://poe.olin.edu/2019/wanderer/logs/11/class-before-end-of-sprint-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/logs/11/class-before-end-of-sprint-3/</guid>
+      <description>Class Before End of Sprint 3 On the mechanical side, the robot was completely assembled by Anna and Michael on Sunday.</description>
+    </item>
+    
+    <item>
+      <title>Anna Letcher-Hartman (She/Her)</title>
+      <link>http://poe.olin.edu/2019/wanderer/team/anna/anna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/team/anna/anna/</guid>
+      <description>  </description>
+    </item>
+    
+    <item>
+      <title>Bill of Materials</title>
+      <link>http://poe.olin.edu/2019/wanderer/bom/bill-of-materials/bom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/bom/bill-of-materials/bom/</guid>
+      <description>Object Unit Price Owned Prior Or Made In House Amount Used For What Total Price     Raspberry PI $40.</description>
+    </item>
+    
+    <item>
+      <title>Caze Zito (He/Them)</title>
+      <link>http://poe.olin.edu/2019/wanderer/team/case/case/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/team/case/case/</guid>
+      <description>Case is a electrical and computing engineer who also often does software.</description>
+    </item>
+    
+    <item>
+      <title>Electrical Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/</guid>
+      <description>For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors.</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/</guid>
+      <description>There are two main components to the mechanical design: the legs and the chassis.</description>
+    </item>
+    
+    <item>
+      <title>Michael Remley (He/Him)</title>
+      <link>http://poe.olin.edu/2019/wanderer/team/michael/michael/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/team/michael/michael/</guid>
+      <description>Michael is an electrical and computing engineer who really enjoys electrical hardware work.</description>
+    </item>
+    
+    <item>
+      <title>Navi Boyalakuntla (She/Her)</title>
+      <link>http://poe.olin.edu/2019/wanderer/team/navi/navi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/team/navi/navi/</guid>
+      <description>Navi is an product design engineer (EECS with Design) at Olin College of Engineering.</description>
+    </item>
+    
+    <item>
+      <title>Software Breakdown</title>
+      <link>http://poe.olin.edu/2019/wanderer/breakdown/software/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/breakdown/software/software/</guid>
+      <description>Github: https://github.com/naviatolin/The-Wanderer
+Communication between Raspberry Pi and Arduino Initially, we were going to use some form of serial communication to exchange information between the Raspberry Pi and Arduino.</description>
+    </item>
+    
+    <item>
+      <title>Sprint 1</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a robot that walks around and can sense walls&lt;/li&gt;
+&lt;li&gt;Show proof-of-concept for components
+&lt;ul&gt;
+&lt;li&gt;Computer vision demonstration&lt;/li&gt;
+&lt;li&gt;Walking mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Robot walks and can sense walls. It is able to turn before the wall
+&lt;ul&gt;
+&lt;li&gt;Computer vision can recognize people&lt;/li&gt;
+&lt;li&gt;Basic walking mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 2</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</guid>
+      <description>&lt;p&gt;We want to develop the personality of the robot more especially with mechanical design and do a lot of user testing to make sure that the robot is &amp;ldquo;cute&amp;rdquo; and personable.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement computer vision on the Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Use Raspberry Pi to communicate with Arduino&lt;/li&gt;
+&lt;li&gt;Improve walking mechanism&lt;/li&gt;
+&lt;li&gt;Develop robot appearance/personality especially making it &amp;ldquo;cute&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Moves with improved linkage leg mechanism&lt;/li&gt;
+&lt;li&gt;Can identify people with the Raspi camera&lt;/li&gt;
+&lt;li&gt;Has fluffy &amp;ldquo;pink monster&amp;rdquo; appearance people found cute&lt;/li&gt;
+&lt;li&gt;The walking mechanism has a wobble aspect which adds a cute personality factor&lt;/li&gt;
+&lt;li&gt;Arduino LED lights up when Raspi sees a person (10 sec)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 3</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrate mechanical electrical and software systems&lt;/li&gt;
+&lt;li&gt;Scale up to final size&lt;/li&gt;
+&lt;li&gt;Increase mechanical robustness (no hot glue!)&lt;/li&gt;
+&lt;li&gt;Run on battery power&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Attached new motor servos&lt;/li&gt;
+&lt;li&gt;Added battery and convert its power for other components&lt;/li&gt;
+&lt;li&gt;Arduino and Raspi wired to each other on chassis and communicate back and forth, with Arduino controlling movement and the Raspi monitoring computer vision and using the speaker&lt;/li&gt;
+&lt;li&gt;Stronger larger design that is wood glued, not hot glued&lt;/li&gt;
+&lt;li&gt;Added ribs on chassis over electronics to give round shape to body and fur&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sprint 4</title>
+      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add low battery notification (over speaker)&lt;/li&gt;
+&lt;li&gt;Redesign chassis to organize electronics for better access&lt;/li&gt;
+&lt;li&gt;Make shape rounder&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Modify sounds to be more cute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;progress&#34;&gt;Progress:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added low battery notification sound by having the Arduino sense voltage from Battery, output digital high or low, convert that voltage to 3.3V range for Raspi, and have Raspi output battery low sound&lt;/li&gt;
+&lt;li&gt;Added more small ribs to structure give a gradual rounding shape&lt;/li&gt;
+&lt;li&gt;Redesigned chassis and had threaded inserts for parts so they held better&lt;/li&gt;
+&lt;li&gt;Decided against modified sounds because we liked the attitude of them (very attention getting)&lt;/li&gt;
+&lt;li&gt;Finished up Documentation&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Problem</title>
+      <link>http://poe.olin.edu/2019/wanderer/beepboop/the-problem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/beepboop/the-problem/</guid>
+      <description>Every semester, students pass through the halls of the Olin College of Engineering Academic Center sad, alone, and reminding themselves that the weekend is only a few days away.</description>
+    </item>
+    
+    <item>
+      <title>Who Am I</title>
+      <link>http://poe.olin.edu/2019/wanderer/beepboop/who-am-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://poe.olin.edu/2019/wanderer/beepboop/who-am-i/</guid>
+      <description>Hello Friend! I am the wanderer - Olin College&#39;s very own wandering robot.</description>
+    </item>
+    
+  </channel>
+</rss>

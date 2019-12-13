@@ -1,0 +1,71 @@
+baseURL = "http://poe.olin.edu/2019/wanderer"
+languageCode = "en-us"
+title = "Hugo Whisper Theme"
+themesDir = "themes"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 10
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "BeepBoop"
+    url = "/beepboop/"
+    weight = 2
+
+[[menu.main]]
+    name = "Breakdown"
+    url = "/breakdown/"
+    weight = 3
+
+[[menu.main]]
+    name = "Sprints"
+    url = "/sprints/"
+    weight = 4
+
+[[menu.main]]
+    name = "BOM"
+    url = "/bom/"
+    weight = 5
+
+[[menu.main]]
+    name = "Logs"
+    url = "/logs/"
+    weight = 6
+
+[[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 7
+
+[params]
+  mainSections = ['beepboop', 'sprints', 'breakdown', 'logs', 'team', "bom", "docs"]
+  google_analytics_id=""
+  homepage_button_link = '/beepboop'
+  homepage_button_text = 'Learn More About Me'
+  homepage_intro = 'Hello! I am the wanderer - a cute, personable robot that is guaranteed to brighten your day.'
+  homepage_image = '/wandererhomepage.gif'
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
+    meta_og_title = "Hugo Whisper Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-whisper.netlify.com"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
+    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
+
+  [params.logo]
+      mobile = "/images/logo-mobile.svg"
+      standard  = "/images/logo.svg"

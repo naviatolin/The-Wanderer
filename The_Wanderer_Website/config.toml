@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://poe.olin.edu/2019/wanderer/"
 languageCode = "en-us"
 title = "The Wanderer"
 theme = "hello-friend"
