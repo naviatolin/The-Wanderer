@@ -2,6 +2,7 @@
 Title: Oct 27, 2019
 weight: 3
 ---
+<!--more-->
 ## Sprint 2 Start
 
 ## Goals

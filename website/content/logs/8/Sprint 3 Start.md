@@ -2,6 +2,7 @@
 Title: Nov 10, 2019
 weight: 8
 ---
+<!--more-->
 ## Sprint 3 Start
 
 ## Goals

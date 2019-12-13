@@ -2,6 +2,7 @@
 Title: Nov 15, 2019
 weight: 10
 ---
+<!--more-->
 ## Goals
 
 - raspi arduino communication

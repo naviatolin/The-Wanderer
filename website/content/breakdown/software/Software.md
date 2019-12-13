@@ -3,6 +3,7 @@ title: 'Software Breakdown'
 ---
 
 Github: [https://github.com/naviatolin/The-Wanderer](https://github.com/naviatolin/The-Wanderer)
+<!--more-->
 
 ### Communication between Raspberry Pi and Arduino
 

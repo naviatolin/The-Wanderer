@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/1/in-class/</guid>
-      <description>Goals  Get started on the individual tasks that we have assigned.</description>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/2/sprint-1-reflection/</guid>
-      <description>Sprint 1 Reflection Plusses Navi  We worked really well together on gettting things done and had great communication Came up with clear implementation plans very quickly Ideated well We vibed  Michael  Mental Health transparency Lots of CV work ported over from SP19 Communication Lots done in class Progress updates  Case  good communication good product, i feel accomplished we&#39;re sticking to our goals and routines well felt listened to in meetings got everything we wanted to done!</description>
+      <description></description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/3/sprint-2-start/</guid>
-      <description>Sprint 2 Start Goals  Assigning tasks for sprint Making a sprint calendar knowing sprint goals start working on sprint tasks talk about personality and do some ideation  What Did We Get Done  we got sprint 1 finished  Reflection (Where could we improve in the future?</description>
+      <description></description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/4/feedback-and-leg-mechanism/</guid>
-      <description>Feedback and Leg Mechanism Goals  Figure out our feedback Finalize the leg mechanism  What Did We Get Done  Got the raspberry pi partially set up (getting python 3 and open cv stuff on it) stared at leg mechanism made progress started on getting the website up  Reflection (Where could we improve in the future?</description>
+      <description></description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/5/meeting/</guid>
-      <description>Goals  Decide what we want for our team bonding Tonight: Have dinner, have fun  What Did We Get Done  Anna researched wheels Navi got first pages of github website showing We ran into an error where the raspberry pi crashed every time we tried to run the python code to detect people.</description>
+      <description></description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/6/leg-and-cv/</guid>
-      <description>Leg and CV! Goals  Figure out the rest of the CV situation Figure out the chassis and leg situation  What Did We Get Done  We fixed the issue with the CV crashing the raspberry pi.</description>
+      <description></description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/7/in-class/</guid>
-      <description>Goals  Construct the prototype from lasercut pieces Start working on different skins  What Did We Get Done  We got the Raspberry pi and the arduino to communication using i2c.</description>
+      <description></description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/8/sprint-3-start/</guid>
-      <description>Sprint 3 Start Goals  Look at slide feedback and reflect Look at sprint goals and create tasks for the sprint decide what things we will buy this week Test out prototype and see how it moves Integration mechanical goal: making working chassis Mechanical mechanical goal: increasing stability of legs, 3D print attachment, order better motors Software goals: comp vis to moving something, get speakers to work, get LCD working Figure out how to integrate more as a team  What Did We Get Done  Set goals for sprint planed out tasks for sprint decided things to order split up tasks for software and made smaller due dates  </description>
+      <description></description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/9/in-class/</guid>
-      <description>Goals  Mechanical: decide on a chassis design, get cadding chat with aaron about stability and weights finish figuring out raspi arduino stuff brainstorm and try different code  What Did We Get Done  Case&amp;amp;Navi: Looked at digital IO on Raspi, played with camera angles (45deg is best), block diagrams/state machine of robot behavior Anna &amp;amp; Michael: Sketched out chassis stuff, talked about motor power and structure stability, walks with weights Michael: Ordered perfboard for the circuit Order sheet: IR sensor, speaker, motor, battery  </description>
+      <description></description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/10/in-class/</guid>
-      <description>Goals  raspi arduino communication put holes in the cad get the crank cad started block diagram  What Did We Get Done  block diagram   we have successfully communicated whether or not we see people between the arduino and the raspberry pi started the crank cad holes in the cad  </description>
+      <description></description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/11/class-before-end-of-sprint-3/</guid>
-      <description>Class Before End of Sprint 3 On the mechanical side, the robot was completely assembled by Anna and Michael on Sunday.</description>
+      <description></description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/team/anna/anna/</guid>
-      <description>  </description>
+      <description></description>
     </item>
     
     <item>
@@ -125,7 +125,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/bom/bill-of-materials/bom/</guid>
-      <description>Object Unit Price Owned Prior Or Made In House Amount Used For What Total Price     Raspberry PI $40.</description>
+      <description>&lt;p&gt;Total Including Free Items: $193.08&lt;/p&gt;
+&lt;p&gt;Total Excluding Free Items: $88.08&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -134,7 +135,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/team/case/case/</guid>
-      <description>Case is a electrical and computing engineer who also often does software.</description>
+      <description></description>
     </item>
     
     <item>
@@ -143,7 +144,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/breakdown/electrical/electrical/</guid>
-      <description>For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors.</description>
+      <description>&lt;p&gt;For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors. Two voltage dividers were needed to allow signal capture while preventing pin damage. The rest of the electrical was connecting components so that the software team has everything they need to program the robot behavior. The schematic for the electrical design is below, and subsystem descriptions follow.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,7 +153,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/breakdown/mechanical/mechanical/</guid>
-      <description>There are two main components to the mechanical design: the legs and the chassis.</description>
+      <description>&lt;p&gt;There are two main components to the mechanical design: the legs and the chassis. We chose a four-bar linkage mechanism for the legs because it gave the tottering movement we wanted without being too complicated. The leg mechanism uses one continuous rotation servo for each side, giving a total of two.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -161,7 +162,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/team/michael/michael/</guid>
-      <description>Michael is an electrical and computing engineer who really enjoys electrical hardware work.</description>
+      <description></description>
     </item>
     
     <item>
@@ -170,7 +171,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/team/navi/navi/</guid>
-      <description>Navi is an product design engineer (EECS with Design) at Olin College of Engineering.</description>
+      <description></description>
     </item>
     
     <item>
@@ -179,8 +180,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/breakdown/software/software/</guid>
-      <description>Github: https://github.com/naviatolin/The-Wanderer
-Communication between Raspberry Pi and Arduino Initially, we were going to use some form of serial communication to exchange information between the Raspberry Pi and Arduino.</description>
+      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/naviatolin/The-Wanderer&#34;&gt;https://github.com/naviatolin/The-Wanderer&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -287,7 +287,7 @@ Communication between Raspberry Pi and Arduino Initially, we were going to use s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/beepboop/the-problem/</guid>
-      <description>Every semester, students pass through the halls of the Olin College of Engineering Academic Center sad, alone, and reminding themselves that the weekend is only a few days away.</description>
+      <description>&lt;p&gt;Every semester, students pass through the halls of the Olin College of Engineering Academic Center sad, alone, and reminding themselves that the weekend is only a few days away. We wondered why people looked so stressed, and sometimes even sad while in this stately building and came to the conclusion that it was because there was a genuine lack of small furry robots that say hi to people.&lt;/p&gt;</description>
     </item>
     
     <item>

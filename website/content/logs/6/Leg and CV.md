@@ -2,6 +2,7 @@
 Title: Nov 03, 2019
 weight: 6
 ---
+<!--more-->
 ## Leg and CV!
 
 ## Goals

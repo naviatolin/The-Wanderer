@@ -2,6 +2,7 @@
 Title: Nov 05, 2019
 weight: 7
 ---
+<!--more-->
 ## Goals
 
 - Construct the prototype from lasercut pieces

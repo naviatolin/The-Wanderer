@@ -192,7 +192,6 @@
 <p>For part of our prototyping process, we explored having the Raspberry Pi and Arduino communicate with I2C. Although we used digital pins in the end, we did successfully exchange information between them using I2C. In I2C_demo we have the Raspberry Pi look for people through the Raspi camera, then tell the Arduino if it sees them through the pin 36. The Raspi also handles the speaker for the robot. If it receives a low battery signal from the Arduino through pin 40, it outputs a &ldquo;low battery&rdquo; sound. When the camera sees a person it outputs a &ldquo;hello&rdquo; noise and after 8 seconds, roughly the time it takes to process that a person would no longer be there, it outputs a &ldquo;goodbye&rdquo; noise.</p>
 <h3 id="computer-vision-code">Computer Vision Code</h3>
 <p>Using OpenCV for Python, we used an implementation of the YOLO-COCO algorithm from a previous software project. This is the most computationally intense part of the project and is why we added the Raspberry Pi to the Wanderer. YOLO-COCO breaks in image down into an array of variously sized pieces (called a blob) and treats each with a large (300MB) weights file to detect a wide range of objects. To minimize computation time and increase robot responsiveness, we reduced the blob size to a minimum, sacrificing some detection ability. In the future, we would probably switch to a more specialized version of YOLO-COCO to reduce computational load.</p>
-
 </div>
 </div>
 

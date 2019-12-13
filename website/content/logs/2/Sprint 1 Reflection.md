@@ -2,6 +2,7 @@
 Title: Oct 25, 2019
 weight: 2
 ---
+<!--more-->
 ## Sprint 1 Reflection
 
 ## Plusses

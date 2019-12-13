@@ -2,7 +2,7 @@
 Title: Nov 12, 2019
 weight: 9
 ---
-
+<!--more-->
 ## Goals
 
 - Mechanical: decide on a chassis design, get cadding

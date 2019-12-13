@@ -1,7 +1,9 @@
 ---
 title: 'Electrical Breakdown'
 ---
-For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors. Two voltage dividers were needed to allow signal capture while preventing pin damage. The rest of the electrical was connecting components so that the software team has everything they need to program the robot behavior. The schematic for the electrical design is below, and subsystem descriptions follow.`
+For the electrical design, the biggest step was converting 12V battery power to 5V for the Raspberry Pi and servo motors. Two voltage dividers were needed to allow signal capture while preventing pin damage. The rest of the electrical was connecting components so that the software team has everything they need to program the robot behavior. The schematic for the electrical design is below, and subsystem descriptions follow.
+
+<!--more-->
 
 ![Electrical/The-Wanderer.png](The-Wanderer.png)
 

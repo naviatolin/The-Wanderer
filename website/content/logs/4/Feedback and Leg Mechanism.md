@@ -2,7 +2,7 @@
 title: Oct 29, 2019
 weight: 4
 ---
-
+<!--more-->
 ## Feedback and Leg Mechanism
 
 ## Goals

@@ -2,7 +2,7 @@
 Title: Oct 18, 2019
 weight: 1
 ---
-
+<!--more-->
 ## Goals
 
 - Get started on the individual tasks that we have assigned.

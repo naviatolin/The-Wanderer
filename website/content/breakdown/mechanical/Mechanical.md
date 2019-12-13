@@ -2,10 +2,10 @@
 title: 'Mechanical Breakdown'
 ---
 
-![POESprint4FullAssem.jpg](POESprint4FullAssem.jpg)
-
-
 There are two main components to the mechanical design: the legs and the chassis. We chose a four-bar linkage mechanism for the legs because it gave the tottering movement we wanted without being too complicated. The leg mechanism uses one continuous rotation servo for each side, giving a total of two.
+
+<!--more-->
+![POESprint4FullAssem.jpg](POESprint4FullAssem.jpg)
 
 ![Mechanical/Captlveyrkvre.jpg](Captlveyrkvre.jpg)
 

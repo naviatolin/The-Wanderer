@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/1/in-class/</guid>
-      <description>Goals  Get started on the individual tasks that we have assigned.</description>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/2/sprint-1-reflection/</guid>
-      <description>Sprint 1 Reflection Plusses Navi  We worked really well together on gettting things done and had great communication Came up with clear implementation plans very quickly Ideated well We vibed  Michael  Mental Health transparency Lots of CV work ported over from SP19 Communication Lots done in class Progress updates  Case  good communication good product, i feel accomplished we&#39;re sticking to our goals and routines well felt listened to in meetings got everything we wanted to done!</description>
+      <description></description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/3/sprint-2-start/</guid>
-      <description>Sprint 2 Start Goals  Assigning tasks for sprint Making a sprint calendar knowing sprint goals start working on sprint tasks talk about personality and do some ideation  What Did We Get Done  we got sprint 1 finished  Reflection (Where could we improve in the future?</description>
+      <description></description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/4/feedback-and-leg-mechanism/</guid>
-      <description>Feedback and Leg Mechanism Goals  Figure out our feedback Finalize the leg mechanism  What Did We Get Done  Got the raspberry pi partially set up (getting python 3 and open cv stuff on it) stared at leg mechanism made progress started on getting the website up  Reflection (Where could we improve in the future?</description>
+      <description></description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/5/meeting/</guid>
-      <description>Goals  Decide what we want for our team bonding Tonight: Have dinner, have fun  What Did We Get Done  Anna researched wheels Navi got first pages of github website showing We ran into an error where the raspberry pi crashed every time we tried to run the python code to detect people.</description>
+      <description></description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/6/leg-and-cv/</guid>
-      <description>Leg and CV! Goals  Figure out the rest of the CV situation Figure out the chassis and leg situation  What Did We Get Done  We fixed the issue with the CV crashing the raspberry pi.</description>
+      <description></description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/7/in-class/</guid>
-      <description>Goals  Construct the prototype from lasercut pieces Start working on different skins  What Did We Get Done  We got the Raspberry pi and the arduino to communication using i2c.</description>
+      <description></description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/8/sprint-3-start/</guid>
-      <description>Sprint 3 Start Goals  Look at slide feedback and reflect Look at sprint goals and create tasks for the sprint decide what things we will buy this week Test out prototype and see how it moves Integration mechanical goal: making working chassis Mechanical mechanical goal: increasing stability of legs, 3D print attachment, order better motors Software goals: comp vis to moving something, get speakers to work, get LCD working Figure out how to integrate more as a team  What Did We Get Done  Set goals for sprint planed out tasks for sprint decided things to order split up tasks for software and made smaller due dates  </description>
+      <description></description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/9/in-class/</guid>
-      <description>Goals  Mechanical: decide on a chassis design, get cadding chat with aaron about stability and weights finish figuring out raspi arduino stuff brainstorm and try different code  What Did We Get Done  Case&amp;amp;Navi: Looked at digital IO on Raspi, played with camera angles (45deg is best), block diagrams/state machine of robot behavior Anna &amp;amp; Michael: Sketched out chassis stuff, talked about motor power and structure stability, walks with weights Michael: Ordered perfboard for the circuit Order sheet: IR sensor, speaker, motor, battery  </description>
+      <description></description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/10/in-class/</guid>
-      <description>Goals  raspi arduino communication put holes in the cad get the crank cad started block diagram  What Did We Get Done  block diagram   we have successfully communicated whether or not we see people between the arduino and the raspberry pi started the crank cad holes in the cad  </description>
+      <description></description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://poe.olin.edu/2019/wanderer/logs/11/class-before-end-of-sprint-3/</guid>
-      <description>Class Before End of Sprint 3 On the mechanical side, the robot was completely assembled by Anna and Michael on Sunday.</description>
+      <description></description>
     </item>
     
   </channel>

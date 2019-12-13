@@ -2,7 +2,7 @@
 title: Nov 01, 2019
 weight: 5
 ---
-
+<!--more-->
 ## Goals
 
 - Decide what we want for our team bonding
