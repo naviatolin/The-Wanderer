@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goals on Hugo Whisper Theme</title>
-    <link>http://poe.olin.edu/2019/wanderer/sprints/</link>
+    <link>https://naviatolin.github.io/The-Wanderer/sprints/</link>
     <description>Recent content in Goals on Hugo Whisper Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://poe.olin.edu/2019/wanderer/sprints/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://naviatolin.github.io/The-Wanderer/sprints/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sprint 1</title>
-      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</link>
+      <link>https://naviatolin.github.io/The-Wanderer/sprints/sprint-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-1/</guid>
+      <guid>https://naviatolin.github.io/The-Wanderer/sprints/sprint-1/</guid>
       <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Make a robot that walks around and can sense walls&lt;/li&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Sprint 2</title>
-      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</link>
+      <link>https://naviatolin.github.io/The-Wanderer/sprints/sprint-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-2/</guid>
+      <guid>https://naviatolin.github.io/The-Wanderer/sprints/sprint-2/</guid>
       <description>&lt;p&gt;We want to develop the personality of the robot more especially with mechanical design and do a lot of user testing to make sure that the robot is &amp;ldquo;cute&amp;rdquo; and personable.&lt;/p&gt;
 &lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
 &lt;ul&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>Sprint 3</title>
-      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</link>
+      <link>https://naviatolin.github.io/The-Wanderer/sprints/sprint-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-3/</guid>
+      <guid>https://naviatolin.github.io/The-Wanderer/sprints/sprint-3/</guid>
       <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Integrate mechanical electrical and software systems&lt;/li&gt;
@@ -86,10 +86,10 @@
     
     <item>
       <title>Sprint 4</title>
-      <link>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</link>
+      <link>https://naviatolin.github.io/The-Wanderer/sprints/sprint-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://poe.olin.edu/2019/wanderer/sprints/sprint-4/</guid>
+      <guid>https://naviatolin.github.io/The-Wanderer/sprints/sprint-4/</guid>
       <description>&lt;h2 id=&#34;goals&#34;&gt;Goals:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Add low battery notification (over speaker)&lt;/li&gt;
