@@ -9,3 +9,6 @@ CAD has the mechnical design files using Solidworks
 
 Within the Firmware folder, i2c_demo is the Raspi code and wheelrun is the Arduino code
 
+See the video of the robot here: https://youtu.be/TBcPSCrN2iE
+See the website here: http://poe.olin.edu/2019/wanderer/
+
