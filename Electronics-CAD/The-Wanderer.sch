@@ -138,10 +138,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 1150 5200 900 
 Wire Wire Line
-	7100 4000 7100 2700
-Wire Wire Line
-	7100 2700 6400 2700
-Wire Wire Line
 	2700 900  2700 1300
 Wire Wire Line
 	4450 1000 4450 1050
@@ -206,7 +202,7 @@ Text Label 3350 3850 0    50   ~ 0
 battOutputPin
 Text Label 3950 1850 0    50   ~ 0
 cameraPin
-Text Label 7100 3150 1    50   ~ 0
+Text Label 3450 1850 3    50   ~ 0
 battInputPin
 $Comp
 L power:GND #PWR?
@@ -257,8 +253,6 @@ Wire Wire Line
 	4150 1000 4450 1000
 Wire Wire Line
 	4200 1300 4200 900 
-Wire Wire Line
-	2700 900  3000 900 
 Connection ~ 4200 900 
 Wire Wire Line
 	4200 900  5200 900 
@@ -282,20 +276,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 2200 3500 2350
 Wire Wire Line
-	3400 1700 3400 2650
-Wire Wire Line
 	3000 1400 3750 1400
-Wire Wire Line
-	3550 1300 3000 1300
-Wire Wire Line
-	3000 1300 3000 900 
-Connection ~ 3000 900 
-Wire Wire Line
-	3000 900  4200 900 
 Text Label 3050 1400 0    50   ~ 0
 5V_Arduino
-Text Label 3050 1300 0    50   ~ 0
-5V_Converter
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5DF2AE3F
@@ -328,4 +311,21 @@ Wire Wire Line
 	3900 1850 4600 1850
 Wire Wire Line
 	3350 2550 3900 2550
+Wire Wire Line
+	3550 1300 3850 1300
+Connection ~ 3850 1300
+Wire Wire Line
+	2700 900  4200 900 
+Text Label 3400 1800 1    50   ~ 0
+5V
+Wire Wire Line
+	3400 1700 3400 1850
+Wire Wire Line
+	3400 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 2350
+Wire Wire Line
+	3450 2350 3400 2350
+Wire Wire Line
+	3400 2350 3400 2650
 $EndSCHEMATC
